@@ -1,0 +1,275 @@
+
+
+body {
+  overflow: hidden;
+  background-color: #21201d;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App {
+  font-family: calibri, sans-serif;
+  text-align: center;
+  height: 100%;
+  flex: 1;
+}
+
+.title {
+  text-decoration: none;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: #ebe5d3;
+  transition: 0.3s ease-out;
+  
+}
+.title:hover{
+  text-decoration: none;
+  color: #b1ada0;
+}
+h3 {
+  font-size: 19px;
+  padding: 0;
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.input-section {
+  margin: 20px;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
+
+input {
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 250px;
+  font-size: 18px;
+  font-family: calibri;
+  font-weight: 700;
+  margin-right: 10px;
+  border-width: 1.5px;
+  background-color: #ded8c5;
+}
+
+.set-ip-btn {
+  border-radius: 3rem;
+  background-color: #ded8c5;
+  color: #21201d;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: calibri;
+}
+
+.log-container {
+  color: #21201d;
+  font-weight: 500;
+  font-family: calibri;
+  border-radius: 1.5rem;
+  overflow-y: auto;
+  margin: 20px auto;
+  width: 80%;
+  background-color: #ebe5d3;
+  transition: all 0.3s ease;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  padding: 0;
+
+}
+
+.log-container::-webkit-scrollbar {
+  display: none;
+}
+
+.log-entry {
+  font-weight: 600;
+  font-size: 18px;
+  font-family: calibri;
+  color: #21201d;
+  padding: 15px;
+  border-bottom: 1px solid #ebe5d3;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.log-entry:nth-child(odd) {
+  background-color: #ebe5d3; 
+  border-radius: 5rem;
+}
+
+.log-entry:nth-child(even) {
+  background-color: #d8d3c2;
+  border-radius: 1.5rem;
+}
+
+.error {
+  font-weight: 600;
+  font-size: 18px;
+  font-family: calibri;
+  padding: 15px;
+  color: #940000;
+}
+
+.clear-logs-btn {
+  border-radius: 3rem;
+  background-color: #940000;
+  margin: 5px;
+  padding: 10px 20px;
+  height: 1px;
+  width: 90%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.download-btn {
+  border-radius: 3rem;
+  background-color: #ded8c5;
+  color: #21201d;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: calibri;
+}
+
+#bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.set-ip-btn,
+.download-btn {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.set-ip-btn:hover,
+.download-btn:hover {
+  border-color: #ebe5d3;
+  background-color: #21201d;
+  color: #ebe5d3;
+}
+
+.clear-logs-btn:hover {
+  border-color: #ebe5d3;
+  background-color: #b90000;
+  color: #ebe5d3;
+  width: 89.5%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 5rem;
+  width: 100%;
+  bottom: 0;
+  height: 20px;
+  color: #ebe5d350;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+
+}
+
+.custom-link {
+  color: #ebe5d350;
+  text-decoration: none;
+}
+
+.custom-link:hover {
+  color: #297fb9c0;
+}
+
+@media (max-width: 768px) {
+  input {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .log-container {
+    width: 80%;
+    padding: 8px;
+  }
+
+  .log-entry {
+    font-size: 16px;
+  }
+
+  #bar {
+    flex-direction: column;
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .set-ip-btn {
+    box-sizing: border-box;
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  .download-btn {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  input {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .log-container {
+    width: 80%;
+    padding: 8px;
+  }
+
+  .log-entry {
+    font-size: 16px;
+  }
+
+  #bar {
+    flex-direction: column;
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .set-ip-btn {
+    box-sizing: border-box;
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  .download-btn {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+}
