@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className='App'>
-      <h1 className="title">Configurar la capacidad</h1>
+      <h1 className="title">Capacidad</h1>
 
       <div className='distdiv'>
         <input

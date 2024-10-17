@@ -23,9 +23,11 @@ body {
   letter-spacing: 2px;
   color: #ebe5d3;
   transition: 0.3s ease-out;
+  letter-spacing: 0.5rem;
   
 }
 .title:hover{
+  font-weight: 700;
   text-decoration: none;
   color: #b1ada0;
 }
