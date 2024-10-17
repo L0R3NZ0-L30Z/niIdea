@@ -204,7 +204,13 @@ input {
   color: #297fb9c0;
 }
 
+.distdiv{
+  margin-top: 1rem;
+}
 @media (max-width: 768px) {
+  .resize{
+    margin-bottom: 1rem;
+  }
   input {
     width: 80%;
     font-size: 16px;
@@ -240,6 +246,9 @@ input {
 }
 
 @media (max-width: 480px) {
+  .resize{
+    margin-bottom: 1rem;
+  }
   input {
     width: 80%;
     font-size: 16px;
