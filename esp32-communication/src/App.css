@@ -84,13 +84,15 @@ input {
   border-radius: 1.5rem;
   overflow-y: auto;
   margin: 20px auto;
-  width: 80%;
+  margin-top: 40px;
+  width: 50%;
+  height: fit-content;
   background-color: #ebe5d3;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   overflow-y: scroll;
   scrollbar-width: none;
   padding: 0;
-
+  text-align: center;
 }
 
 .log-container::-webkit-scrollbar {
@@ -98,25 +100,16 @@ input {
 }
 
 .log-entry {
+  text-align: center;
   font-weight: 600;
   font-size: 18px;
   font-family: calibri;
   color: #21201d;
-  padding: 15px;
+  padding: 7px;
   border-bottom: 1px solid #ebe5d3;
-  text-align: left;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
-.log-entry:nth-child(odd) {
-  background-color: #ebe5d3; 
-  border-radius: 5rem;
-}
-
-.log-entry:nth-child(even) {
-  background-color: #d8d3c2;
-  border-radius: 1.5rem;
-}
 
 .error {
   font-weight: 600;
@@ -209,6 +202,7 @@ input {
 .distdiv{
   margin-top: 1rem;
 }
+
 @media (max-width: 768px) {
   .resize{
     margin-bottom: 1rem;
@@ -219,12 +213,13 @@ input {
   }
 
   .log-container {
-    width: 80%;
-    padding: 8px;
+    width: 83%;
+    padding: 1px;
   }
 
   .log-entry {
     font-size: 16px;
+    padding: 6px;
   }
 
   #bar {
@@ -235,9 +230,9 @@ input {
   }
 
   .set-ip-btn {
+    width: 84%;
     box-sizing: border-box;
     margin-top: 20px;
-    width: 80%;
   }
 
   .download-btn {
@@ -257,12 +252,13 @@ input {
   }
 
   .log-container {
-    width: 80%;
-    padding: 8px;
+    width: 84%;
+    padding: 6px;
   }
 
   .log-entry {
     font-size: 16px;
+    padding: 6px;
   }
 
   #bar {
@@ -275,7 +271,7 @@ input {
   .set-ip-btn {
     box-sizing: border-box;
     margin-top: 20px;
-    width: 80%;
+    width: 84%;
   }
 
   .download-btn {
